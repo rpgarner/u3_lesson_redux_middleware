@@ -13,7 +13,7 @@ const mapDispatchToProps = (dispatch) => {
   }
 }
 
-const Departments = (props) => {
+const Products = (props) => {
 
   useEffect(() => {
     props.fetchDepartments()
@@ -30,4 +30,4 @@ const Departments = (props) => {
   )
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(Departments)
+export default connect(mapStateToProps, mapDispatchToProps)(Products)

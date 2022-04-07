@@ -11,6 +11,8 @@ const DepartmentReducer = (state = iState, action) => {
       return { ...state, departmentsLoading: action.payload }
     case GET_DEPARTMENTS:
       return { ...state, departments: action.payload }
+    case PRODUCT:
+      return { ...state, products: [...state.products, action.payload]}
     default:
       return { ...state }
   }
